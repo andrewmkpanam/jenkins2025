@@ -9,5 +9,5 @@ To Install Jenkins the following steps were taken
 3. Updated package reporisoties
 4. installed java jdk
 5. installed jenkins
-![Alt text](./Screenshot 2025-06-12 at 14.55.39.png)
+![Alt text] (./Screenshot 2025-06-12 at 14.55.39.png)
 6. 
