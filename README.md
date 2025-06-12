@@ -26,4 +26,26 @@ To Install Jenkins the following steps were taken
 ![Alt text](./JenkinsJob.png)
 
 
+Jenkins Pipeline Implementation Documentation
+1. Jenkins Installation and Setup
+Jenkins was successfully installed on a local Ubuntu environment. After installation, the service was started and configured via the web interface using the default admin credentials. Required plugins, including Git, Docker, and Pipeline, were installed to support CI/CD tasks.
+
+2. Docker Installation and Integration
+Docker was installed and configured on the same host. Jenkins was granted permission to interact with the Docker daemon by adding the Jenkins user to the Docker group. This enabled the pipeline to build and run Docker containers directly from within Jenkins.
+
+3. Project Repository Integration
+A public Git repository was connected to Jenkins. This repository contained the application source code and a Jenkinsfile for pipeline execution. Jenkins was configured to poll the repository for changes and trigger builds automatically.
+
+4. Jenkinsfile Pipeline Configuration
+A Jenkinsfile was created and committed to the project repository. The pipeline defined in the Jenkinsfile included multiple stages:
+
+Clone Repository – pulled the latest code from the remote Git repository.
+
+Build Docker Image – built a Docker image using the application’s Dockerfile.
+
+Run Docker Container – deployed the application in a Docker container, mapping appropriate ports.
+
+5. Pipeline Execution and Deployment
+The pipeline was successfully executed within Jenkins. All stages completed without error, demonstrating end-to-end automation from code commit to containerized deployment. Logs and stage outputs were verified through the Jenkins UI to confirm successful implementation.
+
 
