@@ -23,5 +23,7 @@ To Install Jenkins the following steps were taken
 ![Alt text](./Jenkinsimage.png)
 6. Connected Jenkins to github account
 7. Ran simple freestyle job to demonstrate build
+![Alt text](./JenkinsJob.png)
+
 
 
